@@ -1,5 +1,5 @@
 // Repos by SlickNicky10
-// Version: 1.0
+// Version: 0.1.0
 // Github: https://github.com/SlickNicky10/Repos
 module.exports = {
     init: options => {
