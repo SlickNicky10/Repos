@@ -1,6 +1,6 @@
 {
     "name": "Repos",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A module for using custom repositories with Drupi!",
     "main": "index.js",
     "author": "SlickNicky10",
