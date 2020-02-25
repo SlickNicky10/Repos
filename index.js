@@ -1,5 +1,5 @@
 // Repos by SlickNicky10
-// Version: 0.1.0
+// Version: 0.1.1
 // Github: https://github.com/SlickNicky10/Repos
 module.exports = {
     init: options => {
@@ -224,7 +224,10 @@ module.exports = {
                     const mod = require(`./packages/${id}/modules/${name}`);
                     if(!useEnv) return mod;
                     const env = {
-                        path: `${base_path}/packages/${id}/modules/${name}`
+                        path: `${base_path}/packages/${id}/modules/${name}`,
+                        repo_path: `${base_path}/packages/${id}`,
+                        repo_id: id,
+                        instance: e
                     }
                     if(typeof mod == "function"){
                         return mod(env);
