@@ -2,7 +2,7 @@
 
 Repos module for use with Drupi. Download Drupi at https://stacket.net/drupi
 
-The current latest version of Repos is **0.1.0**, and this documentation will always be in reference to the latest version of Repos.
+The current latest version of Repos is **0.1.1**, and this documentation will always be in reference to the latest version of Repos.
 
 # What's Repos?
 
@@ -172,6 +172,12 @@ const module = Repos.require(repo, "some-module", true, "init");
 The Repos ENV passes an object with the following properties:
 
 `path` *(string)* - path to the root directory of the module.
+
+`repo_path` *(string)* - path to the root directory of the repository's installed packages. ***(NEW)***
+
+`repo_id` *(string)* - the repository's local ID. ***(NEW)***
+
+`instance` *(Repos Instance)* - the Repos instance, for example: to load other modules installed from a repository. ***(NEW)***
 
 # Using the Repos API
 
